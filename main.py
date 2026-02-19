@@ -17,7 +17,7 @@ class AppLauncher(ctk.CTk):
         super().__init__()
         self.after(2000, check_for_updates) # Проверить через 2 секунды после старта    
         self.geometry("1100x750")
-        self.title("🚀 Лаунчер")
+        self.title("🚀 Лаунчер Side")
         
         self.settings_window = None
         self.tiles_per_row = settings["tiles_per_row"]
