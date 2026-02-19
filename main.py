@@ -14,8 +14,7 @@ ctk.set_default_color_theme("dark-blue")
 
 class AppLauncher(ctk.CTk):
     def __init__(self):
-        super().__init__()
-        self.after(2000, check_for_updates) # Проверить через 2 секунды после старта    
+        super().__init__() 
         self.geometry("1100x750")
         self.title("🚀 Лаунчер Side")
         
@@ -32,7 +31,7 @@ class AppLauncher(ctk.CTk):
         # Запускаем проверку обновлений через 3 секунды после старта, 
         # чтобы окно успело отрисоваться
         self.after(3000, check_for_updates)
-        
+
         self.container = ctk.CTkFrame(self)
         self.container.pack(fill="both", expand=True)
         
